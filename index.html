@@ -176,6 +176,47 @@
     }
 }
 
+/* Default styles */
+.education-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.date {
+    font-size: 1rem;
+}
+
+.position-gpa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5rem; /* Add some spacing between header and position-gpa */
+}
+
+/* Responsive adjustments for mobile devices */
+@media (max-width: 768px) {
+    .education-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .date {
+        margin-top: 0.5rem;
+        font-size: 0.9rem; /* Adjust the font size if needed */
+    }
+
+    .position-gpa {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .position, .gpa {
+        margin-top: 0.5rem; /* Add spacing between position and GPA */
+    }
+}
+
+
 .zoom-effect {
   overflow: hidden;
   transition: transform 0.3s ease-out;

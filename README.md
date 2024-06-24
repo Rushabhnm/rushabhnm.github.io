@@ -1,3 +1,1 @@
-# rushabhnm.github.io
-
-## Porttfolio Website
+# Portfolio Website

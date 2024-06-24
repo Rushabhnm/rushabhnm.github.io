@@ -152,6 +152,29 @@
     }
 
 /* project image zoom effect */
+/* Default styles */
+.company-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.date {
+    font-size: 1rem;
+}
+
+/* Responsive adjustments for mobile devices */
+@media (max-width: 768px) {
+    .company-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .date {
+        margin-top: 0.5rem;
+        font-size: 0.9rem; /* Adjust the font size if needed */
+    }
+}
 
 .zoom-effect {
   overflow: hidden;
@@ -733,7 +756,6 @@
 					  <span class="date">August 2023 - May 2025</span>
 					</div>
 					<span class="position">AGCO Corp</span>
-					 <!-- <h>Advanced Analytics and Data Engineer Intern</h1> -->
 					<ul class="justified-list">
 					  <li>Developed JSON-configured AWS Glue jobs for data transformation, and deployed them through AWS CloudFormation, boosting
 						code reusability by 60%, and seamlessly integrating with CI/CD workflows</li>
@@ -742,7 +764,6 @@
 					  <li>Leveraged PySpark distributed computing framework for big data processing, enabling analysis of large datasets, thereby expediting complex analytics tasks by 35%</li>
 					</ul>
 				  </div>
-				  
             </li>
             <li class="mb-5">
                 <div class="resume-wrap ftco-animate">

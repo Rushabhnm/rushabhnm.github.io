@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Progress</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .progress-container {
+            margin-bottom: 20px;
+        }
+        .skill-name {
+            margin-bottom: 5px;
+        }
+        .progress {
+            background-color: #f3f3f3;
+            border-radius: 13px;
+            padding: 3px;
+            position: relative;
+            height: 25px;
+            width: 100%;
+        }
+        .progress-bar {
+            height: 100%;
+            border-radius: 10px;
+            position: relative;
+            color: #fff;
+            text-align: center;
+            line-height: 25px;
+            font-weight: bold;
+        }
+        .progress-bar::after {
+            content: attr(aria-valuenow) '%';
+            position: absolute;
+            right: 10px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+<div class="progress-container">
+    <div class="skill-name">SQL</div>
+    <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 95%; background-color: #4caf50;" aria-valuenow="95"></div>
+    </div>
+</div>
+
+<div class="progress-container">
+    <div class="skill-name">Python</div>
+    <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 85%; background-color: #2196f3;" aria-valuenow="85"></div>
+    </div>
+</div>
+
+<div class="progress-container">
+    <div class="skill-name">Spark</div>
+    <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 90%; background-color: #ff9800;" aria-valuenow="90"></div>
+    </div>
+</div>
+
+<div class="progress-container">
+    <div class="skill-name">Power BI</div>
+    <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 85%; background-color: #9c27b0;" aria-valuenow="85"></div>
+    </div>
+</div>
+
+<div class="progress-container">
+    <div class="skill-name">Tableau</div>
+    <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 80%; background-color: #f44336;" aria-valuenow="80"></div>
+    </div>
+</div>
+
+<div class="progress-container">
+    <div class="skill-name">Amazon Web Services</div>
+    <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 80%; background-color: #ffeb3b; color: #000;" aria-valuenow="80"></div>
+    </div>
+</div>
+
+<div class="progress-container">
+    <div class="skill-name">Azure</div>
+    <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 80%; background-color: #00bcd4;" aria-valuenow="80"></div>
+    </div>
+</div>
+
+</body>
+</html>
